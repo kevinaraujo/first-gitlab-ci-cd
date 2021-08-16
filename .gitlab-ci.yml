@@ -11,3 +11,5 @@ build-docker:
   stage: build
   script:
   - docker build -t my-image .
+  - docker tag my-image kevinkangu/devops-master:latest
+  - docker push kevinkangu/devops-master:latest
